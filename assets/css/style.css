@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Poppins:wght@200;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white-color: #f8f8f8;
+    --blue-color: #0187ff;
+    --gray: #777777;
+}
+
+.clear {
+    clear: both;
+}
+
+#section-menu .menu {
+    display: flex;
+    background-color: var(--blue-color);
+    justify-content: center;
+    align-items: center;
+}
+
+#section-menu .menu .menu-item {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 0;
+}
+#section-menu .menu .menu-item li,
+#section-menu .menu .menu-mobile {
+    color: var(--white-color);
+    padding: 16px 16px;
+    font-family: Nunito;
+    font-weight: 600;
+    cursor: pointer;
+}
+#section-menu .menu .menu-item li a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#section-menu .menu .menu-item li:hover {
+    text-shadow: 1px 1px 2px #fff;
+    color: var(--gray);
+}
+
+#section-menu .menu .menu-mobile {
+    display: none;
+}
+
+#section-menu .menu .menu-mobile i {
+    color: var(--white-color); font-size: 20px;
+}
+
+#section-menu .menu .img-logo {
+    padding: 8px;
+    position: relative;
+}
+
+#section-menu .menu .img-logo::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 36px;
+    background: var(--white-color);
+    position: absolute;
+    top: 20%;
+    left: 100%;
+}
+
+#section-menu .menu img {
+    height: 36px;
+}
+
+#elemetor {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(174deg, rgba(216,233,246,1) 0%, rgba(95,175,235,1) 58%, rgba(56,137,210,1) 100%);    
+}
+
+.elementor-container {
+    width: 1140px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#elementor .elememtor-logo {
+    position: relative;
+}
+
+.elememtor-logo img {
+    height: 49px;
+    position: relative;
+    opacity: 100%;
+    padding-bottom: 10px;
+}
+
+.addAnimationForLogo {
+    animation: text-animation 1s linear forwards;
+}
+
+.elementor-text h2 {
+    font-family: Poppins;
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.addAnimationForTextWordPress {
+    animation: text-animation 1s linear forwards;
+}
+
+.elementor-text b,
+.performance-content h2 b {
+    color: var(--blue);
+}
+
+.performan-row,
+.performance-count {
+    display: flex;
+    justify-content: space-around;
+}
+
+.elementor-wiget {
+    display: flex;
+}
+
+#elemetor .wiget-animation {
+    animation: wigetAnimate 1s ease forwards;
+}
+
+
+@keyframes wigetAnimate {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#elemetor .free-build-animation {
+    animation: freeBuildAnimate 1s ease forwards;
+}
+
+@keyframes freeBuildAnimate {
+    from {
+        transform: translateY(400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#elemetor .pre-build-animation {
+    animation: preBuildAnimate 1s ease forwards;
+}
+
+@keyframes preBuildAnimate {
+    from {
+        transform: translateY(400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.elementor-item,
+.performance-item {
+    font-family: Poppins;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-item {
+    width: 33.3%;
+}
+
+.elementor-count,
+.performance__item-count {
+    font-size: 100px;
+    width: 200px;
+    line-height: 100px;
+    color: var(--blue);
+    display: flex;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.elementor-item h3 {
+    font-size: 24px;
+}
+
+.elementor-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+
+.elementor-image img {
+    width: 80%;
+}
+
+#elemetor .addAnimationForImage {
+    animation: right-to-left 1s ease-in;
+}
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blur {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        opacity: 50%;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+
+.performance-container {
+    padding: 100px 0;
+    /* background-image: url(https://manufacturer.stylemixthemes.com/wp-content/uploads/2020/04/bg5.jpg); */
+    background: linear-gradient(149deg, rgba(195,223,244,1) 5%, rgba(145,192,232,1) 30%, rgba(56,137,210,1) 45%, rgba(95,175,235,1) 45%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.performance-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.performance-content,
+.performance-count {
+    padding: 10px;
+}
+
+.performance-content h2 {
+    font-family: Poppins;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 30px;
+    animation: blur 2s ease-in;
+}
+
+.performance-content span {
+    font-size: 16px;
+    color: #000000;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.performance-count h3 {
+    color: #000000;
+}
+
+.performance-count .line {
+    background-color: #5a637b;
+    width: 1px;
+    padding: 0;
+    transform: rotate(12deg);
+    margin: 0 10px;
+}
+
+.animation-1 {
+    position: relative;
+    animation: animation1 1s ease-in forwards;
+}
+
+@keyframes animation1 {
+    from {
+        opacity: 0.5;
+        transform: translateX(-200%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animation-2 {
+    position: relative;
+    animation: right-to-left 1s ease-in;
+    transition: all .4s;
+}
+
+#footer {
+    width: 100%;
+    height: 900px;
+    background-image: url(https://manufacturer.stylemixthemes.com/wp-content/uploads/2020/04/bg3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-content {
+    font: 50px Poppins;
+}
+
+.footer-content span {
+    color: #fff;
+}
+
+.footer-content b {
+    color: var(--blue);
+}
+
+.footer-infor {
+    display: flex;
+    color: #888888;
+    font: 24px Poppins;
+    margin: 30px 0;
+    font-weight: 300;
+}
+
+.footer-infor .heart {
+    color: #fff;
+    margin: 0 16px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(86, 110, 249, 0.4);
+    display: flex;
+    animation: heart-up 1s ease-out infinite;
+    transition: all .2s;
+}
+
+.footer-infor .heart span {
+    width: 35px;
+    height: 35px;
+    margin: 4px;
+    border: 1px solid #888888;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #566ef9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-infor .heart i {
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer-infor-link a {
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.footer-infor-link a,
+.footer-button a {
+    color: #fff;
+    font: 24px Poppins;
+    text-decoration: none;
+}
+
+.footer-infor-link a:hover {
+    text-decoration: none;
+}
+
+.footer-button a {
+    font-size: 16px;
+}
+
+.footer-button .dow-button {
+    margin: 20px 0px 0px -10px;
+}
+
+.footer-button a {
+    background-color: #007bff;
+    padding: 14px 21px;
+    margin: 0px 5px 10px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: Nunito;
+}
+
+.dow-button i {
+    padding-left: 12px;
+}
+
+.dow-button a:hover {
+    background-color: #021893;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-end {
+    margin-top: 40px;
+}
+
+.footer-end p {
+    font: 16px Roboto;
+    color: #5a637b;
+}
+
+@keyframes heart-up {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

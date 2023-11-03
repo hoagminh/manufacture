@@ -1,0 +1,237 @@
+#sectionThree {
+    background-image: url('../images/backgrounds/bg4_2.jpg');
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+#sectionThree #shopAndCatalog {
+    width: 1140px;
+    max-width: 100%;
+    display: flex;
+}
+
+#sectionThree #shopAndCatalog .shop {
+    width: 40%;
+}
+
+#sectionThree #shopAndCatalog .shop .title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#sectionThree #shopAndCatalog .shop .description {
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sectionThree #shopAndCatalog .shop .descriptionMobile {
+    display: none;
+}
+
+#sectionThree #shopAndCatalog .shop .image {
+    width: 100%;
+}
+
+#sectionThree #shopAndCatalog .shop .image img {
+    width: 100%;
+}
+
+#sectionThree #shopAndCatalog .catalog {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#sectionThree #shopAndCatalog .catalog .imageContainer {
+    width: 352px;
+    margin: 65px 0;
+    position: absolute;
+}
+
+#sectionThree #shopAndCatalog .catalog .imageContainer img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#sectionThree #shopAndCatalog .catalog .certificate {
+    position: absolute;
+    width: 285px;
+    bottom: 50px;
+    left: 20px;
+}
+
+#sectionThree #shopAndCatalog .catalog .certificate img {
+    width: 100%;
+    box-shadow: 5px 0 10px 0 #ccc;
+    border-radius: 12px;
+}
+
+#sectionThree #shopAndCatalog .catalog .interCharge {
+    position: absolute;
+    width: 150px;
+    top: -70px;
+    right: 155px;
+    z-index: 3;
+}
+
+#sectionThree #shopAndCatalog .catalog .interCharge img {
+    width: 100%;
+    box-shadow: 3px 0 7px 0 #ccc;
+    border-radius: 12px;
+}
+
+#sectionThree #shopAndCatalog .catalog .dutyMetal {
+    position: absolute;
+    top: -40px;
+    width: 200px;
+    right: 50px;
+    z-index: 2;
+}
+
+#sectionThree #shopAndCatalog .catalog .dutyMetal img {
+    width: 100%;
+    box-shadow: 3px 0 7px 0 #ccc;
+    border-radius: 12px;
+}
+
+#sectionThree .addAnimation {
+    animation: imageLeft 1s linear forwards;
+}
+
+#sectionThree .addAertificateAnima {
+    animation: certificateAnima 1s linear forwards;
+}
+
+#sectionThree .addInterChargeAnima {
+    animation: interChargeAnima 1s linear forwards;
+}
+
+#sectionThree .addDutyMetalAnima {
+    animation: dutyMetalAnima 1s linear forwards;
+}
+
+@keyframes imageLeft {
+    from {
+        transform: translateY(200%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes certificateAnima {
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes interChargeAnima {
+    from {
+        /* transform: translateX(200%); */
+        right: -100%;
+    }
+
+    to {
+        /* transform: translateX(0); */
+        right: 135px;
+    }
+}
+
+@keyframes dutyMetalAnima {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #sectionThree {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #sectionThree #shopAndCatalog {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #sectionThree #shopAndCatalog .shop {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionThree #shopAndCatalog .shop .title {
+        text-align: center;
+    }
+
+    #sectionThree #shopAndCatalog .shop .description {
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    #sectionThree #shopAndCatalog .catalog {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #sectionThree #shopAndCatalog .catalog .certificate {
+        display: none;
+    }
+
+    #sectionThree #shopAndCatalog .catalog .dutyMetal {
+        display: none;
+    }
+
+    #sectionThree #shopAndCatalog .catalog .interCharge {
+        position: absolute;
+        width: 148px;
+        top: -70px;
+        right: 20px;
+        z-index: 3;
+    }
+
+    #sectionThree #shopAndCatalog .catalog .imageContainer img {
+        width: 100%;
+    }
+
+    #sectionThree #shopAndCatalog .shop .description {
+        display: none;
+    }
+
+    #sectionThree #shopAndCatalog .shop .descriptionMobile {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    #sectionThree #shopAndCatalog .shop .image {
+        width: 70%;
+    }
+
+}

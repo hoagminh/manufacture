@@ -1,0 +1,117 @@
+#sectionFour {
+    background-image: url('../images/backgrounds/bg6.jpg');
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+#sectionFour .colorBlue {
+    color: #007bff;
+}
+
+#sectionFour .fontSize24 {
+    font-size: 24px;
+}
+
+#sectionFour .pt-20 {
+    padding-top: 20px;
+}
+
+#sectionFour #mainContainer {
+    width: 1140px;
+    max-width: 100%;
+}
+
+#sectionFour #mainContainer .question {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#sectionFour #mainContainer .questionMobile {
+    display: none;
+}
+
+#sectionFour #mainContainer .question .colorRed {
+    color: #e6305d;
+}
+
+#sectionFour #mainContainer .elementor-row {
+    margin-top: 50px;
+    font-family: Poppins;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #4b4b4b;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+
+#sectionFour #mainContainer .elementor-row .iconContainer {
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+#sectionFour #mainContainer .elementor-row .iconContainer img {
+    height: 100%;
+}
+
+#sectionFour .addAnimationForColumn {
+    animation: animaBottomToUp 1s linear forwards;
+}
+
+@keyframes animaBottomToUp {
+    from {
+        transform: translateY(300px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    #sectionFour #mainContainer .elementor-row {
+        flex-direction: column;
+    }
+
+    #sectionFour #mainContainer .elementor-row .iconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionFour .title {
+        text-align: center;
+    }
+
+    #sectionFour #mainContainer .elementor-row .elementor-column {
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    #sectionFour .description {
+        text-align: center;
+    }
+
+    #sectionFour #mainContainer .question {
+        text-align: center;
+    }
+
+    #sectionFour #mainContainer .question {
+        display: none;
+    }
+
+    #sectionFour #mainContainer .questionMobile {
+        display: block;
+        font-size: 40px;
+        text-align: center;
+    }
+}
