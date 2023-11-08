@@ -16,7 +16,7 @@
     <section id="section-menu">
         <nav class="menu">
             <div class="img-logo">
-                <img src="./assets/img/logo_ayden.png" alt="">
+                <img src="./assets/img/logoAyden.svg" alt="">
             </div>
             <ul class="menu-item">
                 <li><a href="#">Bảng giá</a></li>
@@ -26,7 +26,15 @@
                 <li><a href="#">Khách hàng</a></li>
             </ul>
             <div class="menu-mobile">
-                <i class="fas fa-bars"></i>
+                <i id="openMenu" class="fas fa-bars"></i>
+                <i id="closeMenu" class="fas fa-times display-none"></i>
+                <ul id="showMenu" class="menu-mobile-list display-none">
+                    <li><a href="#">Bảng giá</a></li>
+                    <li><a href="#">Lĩnh vực</a></li>
+                    <li><a href="#">Kho giao diện</a></li>
+                    <li><a href="#">Kho ứng dụng</a></li>
+                    <li><a href="#">Khách hàng</a></li>
+                </ul>
             </div>
         </nav>
     </section>
@@ -44,7 +52,7 @@
                     </div>
 
                     <div class="detail-price">
-                        <span>1.600 <sup>$</sup> </span> / <del>2.000 $</del>
+                        <span>1.600<sup style="font-size: 24px;">$</sup> </span> / <del>2.000$</del>
                     </div>
 
                     <div class="detail-action">
@@ -347,14 +355,14 @@
             <div class="footer-menu flex-container">
                 <div class="row-container">
                     <div class="footer-item">
-                        <div class="item-title">Sapo.vn</div>
+                        <div class="item-title">Ayden.company</div>
                         <ul>
                             <li><a href="#">Về chúng tôi</a></li>
-                            <li><a href="#">Sapo là gì?</a></li>
-                            <li><a href="#">Blog Sapo</a></li>
+                            <li><a href="#">Ayden là gì?</a></li>
+                            <li><a href="#">Blog Ayden</a></li>
                             <li><a href="#">Bảng giá</a></li>
                             <li><a href="#">Tuyển dụng</a></li>
-                            <li><a href="#">Sapo Academy</a></li>
+                            <li><a href="#">Ayden Academy</a></li>
                         </ul>
                     </div>
                     <div class="footer-item">
@@ -400,7 +408,7 @@
                             <ul>
                                 <li><a href="#">Trung tâm trợ giúp</a></li>
                                 <li><a href="#">Hình thức thanh toán</a></li>
-                                <li><a href="#">Hướng dẫn đăng nhập Sapo</a></li>
+                                <li><a href="#">Hướng dẫn đăng nhập Ayden</a></li>
                                 <li><a href="#">Quy định sử dụng</a></li>
                                 <li><a href="#">Chính sách bảo mật</a></li>
                                 <li><a href="#">Liên hệ</a></li>
@@ -437,16 +445,17 @@
                                 </ul>
                             </div>
                             <div class="contact-info">
-                                <p class="uppercase">Công ty cổ phần công nghệ Sapo (Sapo Teachnology JSC)</p>
+                                <p class="uppercase">Ayden Company</p>
                                 <p>
-                                    <span>Trụ sở</span> <i class="fas fa-map-marker-alt"></i> <span>Tầng 6 - Tòa nhà
-                                        Ladeco - 266 Đội Cấn - Phường Liễu Giai - Quận Ba Đình - TP Hà Nội</span>
+                                    <span>Địa chỉ</span> <i class="fas fa-map-marker-alt"></i> <span>Đường số 10
+                                        KDC Tràng An, Phường 7
+                                        TP Bạc Liêu, Bạc Liêu</span>
                                 </p>
-                                <p>
+                                <!-- <p>
                                     <span>Chi nhánh</span> <i class="fas fa-map-marker-alt"></i> <span>Lầu 5, Tòa Lữ
                                         Gia, Số 70 Lữ Gia, Quận 11, TP HCM</span>
-                                </p>
-                                <p>
+                                </p> -->
+                                <!-- <p>
                                     <span style="visibility: hidden;">Chi nhánh</span> <i
                                         class="fas fa-map-marker-alt"></i>
                                     <span>Số 83 Đường Xô
@@ -457,7 +466,7 @@
                                         class="fas fa-map-marker-alt"></i>
                                     <a> Xem thêm 24 chi
                                         nhánh của Sapo trên toàn quốc</a>
-                                </p>
+                                </p> -->
                                 <p>
                                     <strong>Tổng đài hỗ trợ</strong>
                                 </p>
@@ -471,15 +480,15 @@
                                     <strong>Hỗ trợ vận chuyển:</strong> <b>1800 6750</b>
                                 </p>
                                 <p>
-                                    <strong>Email:</strong> <b>support@sapo.vn</b>
+                                    <strong>Email:</strong> <b>support@ayden.company</b>
                                 </p>
                                 <p>
-                                    Từ 7h00 – 22h00 các ngày từ thứ 2 đến Chủ nhật
+                                    Chat trực tuyến các ngày trong tuần 24/7
                                 </p>
                                 <p>Liên hệ hợp tác</p>
                                 <div class="notifi">
                                     <div class="text">
-                                        <strong>Email:</strong> <b>partner@sapo.vn</b>
+                                        <strong>Email:</strong> <b>info@ayden.company</b>
                                     </div>
                                     <div class="img">
                                         <img src="./assets/img/bocongthuong.png" alt="bocongthuong">
@@ -494,7 +503,7 @@
             <div class="footer-copyright">
                 <div class="copy-right">
                     <span>Coppyright @</span>
-                    <a href="#">Sapo.vn</a>
+                    <a href="#">Ayden.company</a>
                     <p>Nền tảng bán hàng đa kênh được sử dụng nhiều nhất Việt Nam</p>
                 </div>
 
@@ -506,9 +515,10 @@
         </div>
     </footer>
 
-    <script src="./javascripts/spoiler.js"></script>
-    <script src="./javascripts/slider.js"></script>
     <script src="./javascripts/countdown.js"></script>
+    <script src="./javascripts/slider.js"></script>
+    <script src="./javascripts/spoiler.js"></script>
+    <script src="./javascripts/showmenumobile.js"></script>
 </body>
 
 </html>

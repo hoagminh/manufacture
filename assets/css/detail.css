@@ -16,7 +16,7 @@
 }
 
 .display-none {
-    display: none;
+    display: none !important;
 }
 
 .hide {
@@ -74,11 +74,33 @@
 
 #section-menu .menu .menu-mobile {
     display: none;
+    width: 100%;
+    position: relative;
+}
+
+#section-menu .menu-mobile-list {
+    background: var(--blue-color);
+    width: calc(100% + 108px);
+    list-style-type: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+}
+
+#section-menu .menu-mobile-list li {
+    padding: 10px 16px;
+
+}
+
+#section-menu .menu-mobile-list li a {
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 #section-menu .menu .menu-mobile i {
     color: var(--white-color); 
     font-size: 20px;
+    float: right;
 }
 
 #section-menu .menu .img-logo {
@@ -93,12 +115,13 @@
     height: 36px;
     background: var(--white-color);
     position: absolute;
-    top: 20%;
-    left: 100%;
+    top: 30%;
+    left: 96%;
 }
 
 #section-menu .menu img {
     height: 60px;
+    width: 133px;
 }
 
 #section-top {
@@ -129,8 +152,10 @@
 }
 
 .detail-container-left h1 {
-    font: 28px;
-    margin-bottom: 16px;
+    font-size: 39px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin-bottom: 5px;
 }
 
 .detail-container-left .desc {
@@ -205,10 +230,12 @@
 .detail-container-left .countdown .countdown-timer .itime {
     padding: 0px 10px;
     font-size: 30px;
+    font-weight: 600;
 }
 
 .itime .font-size-16 {
     font-size: 16px;
+    font-weight: 500;
 }
 
 .detail-container-left .countdown .itime:first-child {
@@ -323,7 +350,9 @@
 }
 
 #feature-infor .feature-left-container h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #feature-infor .feature-left-container p {
