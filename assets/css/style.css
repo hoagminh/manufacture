@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+.display-none {
+	display: none !important;
+}
+
 :root {
 	--white-color: #f8f8f8;
 	--blue-color: #0187ff;
@@ -67,7 +71,7 @@ del {
 
 #section-menu .menu-mobile-list {
 	background: var(--blue-color);
-	width: calc(100% + 108px);
+	width: calc(100% + 150px);
 	list-style-type: none;
 	position: absolute;
 	top: calc(100% + 12px);

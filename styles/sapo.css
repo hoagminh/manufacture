@@ -16330,7 +16330,7 @@ body {
 	margin: -5px 0 0 7px;
 }
 
-.menu-mobile {
+/* .menu-mobile {
 	width: 450px;
 	max-width: 91%;
 	background: #fff;
@@ -16341,7 +16341,7 @@ body {
 	z-index: 2147483641;
 	transition: all 0.3s ease-in-out;
 	overflow: auto;
-}
+} */
 
 .menu-mobile.show {
 	right: 0;
