@@ -1,175 +1,201 @@
 #sectionOne {
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: #e7e7e7;
 }
 
 #sectionOne .width25 {
-    width: 25% !important;
+	width: 25% !important;
 }
 
 #sectionOne #stunningDemos {
-    width: 1140px;
-    max-width: 100%;
+	width: 1140px;
+	max-width: 100%;
+	padding: 10px;
+	text-align: center;
 }
 
 #sectionOne #stunningDemos .title {
-    font-size: 40px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 20px;
-    font-family: 'Poppins';
-    animation: showTitle 2s linear forwards;
+	font-size: 40px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 20px;
+	font-family: "Poppins";
+	animation: showTitle 2s linear forwards;
 }
 
 #sectionOne #stunningDemos .titleMobile {
-    display: none;
+	display: none;
 }
 
 #sectionOne #stunningDemos .colorRed {
-    color: #e6305d;
+	color: #e6305d;
 }
 
 #sectionOne #stunningDemos .colorBlue {
-    color: #0186ff;
+	color: #0186ff;
 }
 
 #sectionOne #stunningDemos .flexContainer {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-
 #sectionOne #stunningDemos .flexContainer .demoContainer {
-    width: 33.333%;
-    padding: 5px;
-    padding-bottom: 20px;
+	width: 33.333%;
+	padding: 5px;
+	padding-bottom: 20px;
 }
 
 .item-product {
-    margin: 4px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    border-radius: 8px;
+	margin: 4px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	border-radius: 8px;
+	background: #fff;
 }
 
 #sectionOne #stunningDemos .flexContainer .demoContainer .imgContainer {
-    height: 400px;
-    overflow-y: hidden;
-    border-radius: 5px;
+	max-height: 250px;
+	overflow-y: hidden;
+	border-radius: 5px;
 }
 
 #sectionOne #stunningDemos .flexContainer .demoContainer .imgContainer img {
-    width: 100%;
-    transform: translateY(0);
-    transition: transform 7s;
+	width: 100%;
+	transform: translateY(0);
+	transition: transform 7s;
 }
 
-#sectionOne #stunningDemos .flexContainer .demoContainer:hover .imgContainer img {
-    transform: translateY(calc(-100% + 400px));
-    transition: transform 7s;
+#sectionOne
+	#stunningDemos
+	.flexContainer
+	.demoContainer:hover
+	.imgContainer
+	img {
+	transform: translateY(calc(-100% + 400px));
+	transition: transform 7s;
 }
 
 #sectionOne #stunningDemos .flexContainer .demoContainer .demoName {
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    margin: 16px 0;
-    color: #000000;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	margin: 16px 0;
+	color: #000000;
 }
 
 #sectionOne #stunningDemos .flexContainer .demoContainer:hover .demoName {
-    color: #0186ff;
+	color: #0186ff;
 }
 
 #sectionOne .demoContainer .demoPrice {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--blue);
-    font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--blue);
+	font-weight: 700;
 }
 
 #sectionOne .demoContainer .demoPrice del {
-    color: #a0aec0;
-    font-weight: 300;
-    margin-left: 20px;
+	color: #a0aec0;
+	font-weight: 300;
+	margin-left: 20px;
 }
 
 #sectionOne .demoContainer .demoButton {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+#sectionOne .demoContainer .demoButton a {
+	text-decoration: none;
 }
 
 #sectionOne .demoButton .demoButtonView,
 #sectionOne .demoButton .demoButtonDetail {
-    margin: 10px 0px;
-    padding: 4px 30px;
-    border-radius: 32px;
-    color: var(--blue);
-    border: none;
-    cursor: pointer;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin: 10px 0px;
+	padding: 4px 30px;
+	border-radius: 32px;
+	color: var(--blue);
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 #sectionOne .demoButton .demoButtonView {
-    background: linear-gradient(90deg, rgba(95,175,235,1) 0%, rgba(56,137,210,1) 100%);
-    color: #fff;
+	background: linear-gradient(
+		90deg,
+		rgba(95, 175, 235, 1) 0%,
+		rgba(56, 137, 210, 1) 100%
+	);
+}
+
+#sectionOne .demoButton .demoButtonView a {
+	color: #fff;
 }
 
 #sectionOne .demoButton .demoButtonDetail {
-    border: 1px solid var(--blue);
+	border: 1px solid var(--blue);
+	background-color: #fff;
 }
 
 #sectionOne .demoButton .demoButtonView:hover {
-    background: linear-gradient(90deg, rgba(56,137,210,1) 0%, rgba(95,175,235,1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(56, 137, 210, 1) 0%,
+		rgba(95, 175, 235, 1) 100%
+	);
 }
 
 #sectionOne .demoButton .demoButtonDetail:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 @keyframes showTitle {
-    from {
-        opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 760px) {
-    #sectionOne #stunningDemos .flexContainer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	#sectionOne #stunningDemos .flexContainer {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    #sectionOne #stunningDemos .flexContainer .demoContainer {
-        width: 100%;
-        padding: 5px;
-        padding-bottom: 20px;
-    }
+	#sectionOne #stunningDemos .flexContainer .demoContainer {
+		width: 100%;
+		padding: 5px;
+		padding-bottom: 20px;
+	}
 
-    #sectionOne .width100 {
-        width: 100% !important;
-    }
+	#sectionOne .width100 {
+		width: 100% !important;
+	}
 
-    #sectionOne #stunningDemos .titleMobile {
-        display: block;
-        font-size: 28px;
-        font-weight: 700;
-        color: #000000;
-        margin-bottom: 20px;
-        font-family: 'Poppins';
-        text-align: center;
-        animation: showTitle 2s linear forwards;
-    }
+	#sectionOne #stunningDemos .titleMobile {
+		display: block;
+		font-size: 28px;
+		font-weight: 700;
+		color: #000000;
+		margin-bottom: 20px;
+		font-family: "Poppins";
+		text-align: center;
+		animation: showTitle 2s linear forwards;
+	}
 
-    #sectionOne #stunningDemos .title {
-        display: none;
-    }
+	#sectionOne #stunningDemos .title {
+		display: none;
+	}
 }

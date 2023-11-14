@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manufacture</title>
+    <title>Ayden Home</title>
     <link rel="stylesheet" href="./styles/headSection.css">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/sectionOne.css">
@@ -22,17 +22,29 @@
     <section id="section-menu">
         <nav class="menu">
             <div class="img-logo">
-                <img src="https://ayden.company/assets/images/logo.svg" alt="">
+                <img src="./assets/img/logoAyden.svg" alt="">
             </div>
             <ul class="menu-item">
-                <li><a href="#">Bảng giá</a></li>
-                <li><a href="#">Lĩnh vực</a></li>
-                <li><a href="#">Kho giao diện</a></li>
-                <li><a href="#">Kho ứng dụng</a></li>
-                <li><a href="#">Khách hàng</a></li>
+                <li><a href="">Trang chủ</a></li>
+                <li>
+                    <a href="#">Lĩnh vực</a>
+                </li>
+                <li><a href="">Kho giao diện</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="customer.html">Khách hàng</a></li>
+                <li><a href="#">Trợ giúp</a></li>
             </ul>
             <div class="menu-mobile">
-                <i>Menu</i>
+                <i id="openMenu" class="fas fa-bars"></i>
+                <i id="closeMenu" class="fas fa-times display-none"></i>
+                <ul id="showMenu" class="menu-mobile-list display-none">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Lĩnh vực</a></li>
+                    <li><a href="index.html">Kho giao diện</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="customer.html">Khách hàng</a></li>
+                    <li><a href="#">Trợ giúp</a></li>
+                </ul>
             </div>
         </nav>
     </section>
@@ -365,34 +377,32 @@
             </div>
         </div>
     </div>
-    </div>
 
 
     <div id="sectionOne">
         <div id="stunningDemos">
             <div class="title">
-                <span class="colorBlue"> Stunning demos </span>has been <br /> carefully made to fit specific
-                <br /> industry needs
+                <span class="colorBlue"> Blog </span>
             </div>
             <div class="titleMobile">
-                <span class="colorBlue"> Stunning demos </span>has been carefully made to fit specific industry needs
+                <span class="colorBlue"> Blog </span>
             </div>
 
             <div class="flexContainer">
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/demo2.jpg" />
+                            <img src="./assets/img/product/demo06.png" />
                         </div>
                         <div class="demoName">
-                            Industrial Equipment & Machinery
+                            Demo 001
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
@@ -400,17 +410,17 @@
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos//Factory_Plant_industryal.jpg" />
+                            <img src="./assets/img/product/demo08.png" />
                         </div>
                         <div class="demoName">
-                            Factory, Plant, Industrial
+                            Demo 002
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
@@ -418,264 +428,80 @@
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Fabric_Textile.jpg" />
+                            <img src="./assets/img/product/demo10.png" />
                         </div>
                         <div class="demoName">
-                            Fabric Textile
+                            Demo 003
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
+
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Industrial_Theme_Video_Slider.jpg" />
+                            <img src="./assets/img/product/demo04.png" />
                         </div>
                         <div class="demoName">
-                            Industrial Theme, Video Slider
+                            Demo 004
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
+
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Leather.jpg" />
+                            <img src="./assets/img/product/demo05.png" />
                         </div>
                         <div class="demoName">
-                            Leather
+                            Demo 005
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Industrial_Factory_WordPress_Theme.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Industrial, Factory WordPress Theme
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Lamps.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Lamps
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Furniture.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Furniture
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Dashcam.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Dashcam
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Snack_Food.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Snack Food & Wholesale Bakery
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Pharmacy.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Pharmacy
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Cosmetics.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Cosmetics
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="flexContainer">
-                <div class="demoContainer width25 width100">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Action_Gimbal.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Action Gimbal
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demoContainer width25 width100">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Sewing_Machines.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Sewing Machines
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demoContainer width25 width100">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Packaging_Equipment.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Packaging Equipment
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer width25 width100">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Paper_Packaging.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Paper Packaging
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="title">
+                <span class="colorBlue"> Gaming </span>
+            </div>
+            <div class="titleMobile">
+                <span class="colorBlue"> Gaming </span>
             </div>
 
             <div class="flexContainer">
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Pipes_Fittings_Tubes_Manufacturer.jpg" />
+                            <img src="./assets/img/product/demo01.png" />
                         </div>
                         <div class="demoName">
-                            Pipes, Fittings & Tubes Manufacturer
+                            Demo 006
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
@@ -683,17 +509,17 @@
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Automatic_Gates_Manufacturer.jpg" />
+                            <img src="./assets/img/product/demo07.png" />
                         </div>
                         <div class="demoName">
-                            Automatic Gates Manufacturer
+                            Demo 007
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
@@ -701,274 +527,141 @@
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Soap_Detergent_Chemical_Production_Producer.jpg" />
+                            <img src="./assets/img/product/demo02.png" />
                         </div>
                         <div class="demoName">
-                            Soap, Detergent & Chemical
+                            Demo 008
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">
+                <span class="colorBlue"> Shopping </span>
+            </div>
+            <div class="titleMobile">
+                <span class="colorBlue"> Shopping </span>
+            </div>
+
+            <div class="flexContainer">
+                <div class="demoContainer">
+                    <div class="item-product">
+                        <div class="imgContainer">
+                            <img src="./assets/img/product/demo09.png" />
+                        </div>
+                        <div class="demoName">
+                            Demo 09
+                        </div>
+                        <div class="demoPrice">
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
+                        </div>
+                        <div class="demoButton">
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Nail_and_Bolt_Manufacturer.jpg" />
+                            <img src="./assets/img/product/demo04.png" />
                         </div>
                         <div class="demoName">
-                            Nail and Bolt Manufacturer
+                            Demo 10
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="demoContainer">
+                    <div class="item-product">
+                        <div class="imgContainer">
+                            <img src="./assets/img/product/demo11.png" />
+                        </div>
+                        <div class="demoName">
+                            Demo 11
+                        </div>
+                        <div class="demoPrice">
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
+                        </div>
+                        <div class="demoButton">
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
 
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Automotive_Parts_Manufacturer.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Automotive Parts Manufacturer
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
 
+            </div>
+
+            <div class="title">
+                <span class="colorBlue"> Fashion </span>
+            </div>
+            <div class="titleMobile">
+                <span class="colorBlue"> Fashion </span>
+            </div>
+
+            <div class="flexContainer">
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Ceramic_Tile_Manufacturer.jpg" />
+                            <img src="./assets/img/product/demo12.png" />
                         </div>
                         <div class="demoName">
-                            Ceramic Tile Manufacturer
+                            Demo 12
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Bicycle_Manufacturer.jpg" />
+                            <img src="./assets/img/product/demo13.png" />
                         </div>
                         <div class="demoName">
-                            Bicycle Manufacturer
+                            Demo 13
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="demoContainer">
                     <div class="item-product">
                         <div class="imgContainer">
-                            <img src="./images/demos/Napkins_Paper_Production.jpg" />
+                            <img src="./assets/img/product/demo14.png" />
                         </div>
                         <div class="demoName">
-                            Napkins & Paper Production
+                            Demo 14
                         </div>
                         <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
+                            <span>1.500.000 đ</span> <del>2.000.000 đ</del>
                         </div>
                         <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Stone_Paving_stone_Manufacturer.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Stone & Paving stone Manufacturer
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/LED_Lamps_Power_Sockets_Maker.jpg" />
-                        </div>
-                        <div class="demoName">
-                            LED Lamps & Power Sockets Maker
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Industrial-4.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Industrial 4
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Floors_Floor_Covering_Manufacturer.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Floors & Floor Covering Manufacturer
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Industrial_5.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Industrial 5
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Industrial_6.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Industrial 6
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Industrial_7.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Industrial 7
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Industrial_8.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Industrial 8
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Factory_2.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Factory 2
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="demoContainer">
-                    <div class="item-product">
-                        <div class="imgContainer">
-                            <img src="./images/demos/Textile_3.jpg" />
-                        </div>
-                        <div class="demoName">
-                            Textile 3
-                        </div>
-                        <div class="demoPrice">
-                            <span>1500 $</span> <del>2000 $</del>
-                        </div>
-                        <div class="demoButton">
-                            <button class="demoButtonView">View</button>
-                            <button class="demoButtonDetail">Detail</button>
+                            <button class="demoButtonView"><a href="">Xem</a></button>
+                            <button class="demoButtonDetail"><a href="detail.html">Chi tiết</a></button>
                         </div>
                     </div>
                 </div>
@@ -980,11 +673,11 @@
         <div class="elementor-container">
             <div class="elementor-content">
                 <div class="elememtor-logo">
-                    <img id="logoJS" src="https://ayden.company/assets/images/logo.svg" alt="">
+                    <img id="logoJS" src="./assets/img/logoAyden.svg" alt="">
                 </div>
 
                 <div class="elementor-text">
-                    <h2 id="wordPressPageBuilderJS"><b>The World's Leading</b> <br /> WordPress Page Builder</h2>
+                    <h2 id="wordPressPageBuilderJS"><b>Dẫn đầu thế giới</b> <br />Về trình tạo trang WordPress</h2>
                 </div>
             </div>
 
@@ -993,21 +686,21 @@
                     <div class="elementor-count">
                         <span id="wigetSpanJS">50+</span>
                     </div>
-                    <h3>Widgets</h3>
+                    <h3>Mẫu có sẵn</h3>
                 </div>
 
                 <div class="elementor-item" id="freeBuildJS">
                     <div class="elementor-count">
                         <span id="freeBuildSpanJS">40+</span>
                     </div>
-                    <h3>Free Prebuilt Templates</h3>
+                    <h3>Mẫu miễn phí</h3>
                 </div>
 
                 <div class="elementor-item pre-build-animation" id="preBuildJS">
                     <div class="elementor-count">
                         <span id="preBuildSpan">150+</span>
                     </div>
-                    <h3>Prebuilt Blocks</h3>
+                    <h3>Mẫu theo yêu cầu</h3>
                 </div>
             </div>
         </div>
@@ -1017,7 +710,7 @@
         </div>
     </div>
 
-    <div id="sectionThree">
+    <!-- <div id="sectionThree">
         <div id="shopAndCatalog">
             <div class="shop">
                 <div class="title">
@@ -1048,9 +741,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="sectionFour">
+    <!-- <div id="sectionFour">
         <div id="mainContainer">
             <div class="question">Why Manufacturer <br /> is the <span class="colorBlue">Best Industrial <br />
                     Theme</span> on Envato?
@@ -1154,14 +847,14 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section id="perfomance">
         <div class="performance-container">
             <div class="performan-row">
                 <div class="performance-content">
-                    <h2><b>Ultra</b> <br /> Perfomance</h2>
-                    <span>Manufacturer is <b>lighter and faster</b> than other top selling themes</span>
+                    <h2><b>Hiệu suất</b> <br /> Cao</h2>
+                    <span>Mẫu từ Ayden <b>nhẹ và nhanh</b> hơn so với những template khác</span>
                 </div>
 
                 <div class="performance-count">
@@ -1169,7 +862,7 @@
                         <div class="performance__item-count">
                             <span id="pageSpeedSpanJS">97%</span>
                         </div>
-                        <h3>PageSpeed</h3>
+                        <h3>Tốc độ tải trang</h3>
                     </div>
 
                     <div class="performance-item line"></div>
@@ -1178,7 +871,7 @@
                         <div class="performance__item-count">
                             <span id="YSlowSpanJS">89%</span>
                         </div>
-                        <h3>YSlow</h3>
+                        <h3>Hiệu suất</h3>
                     </div>
                 </div>
             </div>
@@ -1189,40 +882,41 @@
         <div class="footer-container">
             <div class="container">
                 <div class="footer-content">
-                    <div><span>Get The</span> <b>Best</b></div> <b>Manufacturing Theme</b> <br> <span>on
+                    <div><span>Chọn</span> <b>Mẫu</b></div> <b>Template tốt nhất</b> <br> <span>trên
                         WordPress</span>
                 </div>
 
                 <div class="footer-infor">
-                    <span>Made with</span>
+                    <span>Tạo nên từ</span>
                     <div class="heart">
                         <span><i class="far fa-heart"></i></span>
                     </div>
                     <div class="footer-infor-link">
-                        by <a href="#">StylemixThemes</a>
+                        bởi <a href="#">Ayden</a>
                     </div>
                 </div>
 
                 <div class="footer-button">
                     <div class="dow-button">
                         <a href="#">
-                            Download it now! <i class="fas fa-arrow-right"></i>
+                            Tải xuống ngay bây giờ! <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="footer-end">
-                    <p>*6 Month support included</p>
+                    <p>*6 tháng hỗ trợ</p>
                 </div>
             </div>
         </div>
     </section>
+
+
 </body>
 
 <script src="./javascripts/headSection.js"></script>
 <script src="./javascripts/elemetor.js"></script>
-<script src="./javascripts/sectionThree.js"></script>
-<script src="./javascripts/sectionFour.js"></script>
 <script src="./javascripts/perFomance.js"></script>
+<script src="./javascripts/showmenumobile.js"></script>
 
 </html>
