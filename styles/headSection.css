@@ -1,110 +1,108 @@
 #headSection {
-    display: flex;
-    justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 50px;
-    background-image: linear-gradient(to right, #5aadf0, white);
-    background-image: linear-gradient(to right, white, #5aadf0);
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* background-image: url('../images/backgrounds/header-bg.png'); */
+	display: flex;
+	justify-content: center;
+	padding-top: 120px;
+	padding-bottom: 50px;
+	background-image: linear-gradient(to right, #5aadf0, white);
+	background-image: linear-gradient(to right, white, #5aadf0);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* background-image: url('../images/backgrounds/header-bg.png'); */
 }
 
-
 #headSection .mainContainer {
-    width: 1140px;
-    max-width: 100%;
-    display: flex;
-    gap: 20px;
+	width: 1140px;
+	max-width: 100%;
+	display: flex;
+	gap: 20px;
 }
 
 #headSection .headLeft,
 #headSection .headRight {
-    width: 50%;
-    padding: 10px;
+	width: 50%;
+	padding: 10px;
 }
 
 #headSection .headLeft .title {
-    margin-bottom: 20px;
-    font-size: 40px;
-    color: #1377ff;
-    font-weight: 700;
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: #1377ff;
+	font-weight: 700;
 }
 
 #headSection .headLeft .blockTitle {
-    display: flex;
-    font-size: 16px;
-    gap: 20px;
-    margin-top: 15px;
+	display: flex;
+	font-size: 16px;
+	gap: 20px;
+	margin-top: 15px;
 }
 
 #headSection .headLeft .blockTitle .subTitle {
-    color: #000;
+	color: var(--gray);
 }
 
 #headSection .headLeft .button {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 #headSection .headLeft .discoverButton {
-    background: linear-gradient(90deg, #1377ff 0%, #0088ff 100%);
-    border-radius: 90px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 28px;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 35.2px;
-    color: #fff;
-    list-style: none;
-    text-decoration: none;
+	background: linear-gradient(90deg, #1377ff 0%, #0088ff 100%);
+	border-radius: 90px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 28px;
+	font-weight: 500;
+	text-align: center;
+	padding: 10px 35.2px;
+	color: #fff;
+	list-style: none;
+	text-decoration: none;
 }
 
 #headSection .headLeft .discoverButton:hover {
-    background: rgb(0, 136, 255, .7);
+	background: rgb(0, 136, 255, 0.7);
 }
 
 #headSection .headRight {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 @media only screen and (max-width: 760px) {
-    #headSection .mainContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+	#headSection .mainContainer {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 
-    #headSection .headLeft,
-    #headSection .headRight {
-        width: 100%;
-    }
+	#headSection .headLeft,
+	#headSection .headRight {
+		width: 100%;
+	}
 
-    #headSection .headLeft .button {
-        display: none;
-    }
+	#headSection .headLeft .button {
+		display: none;
+	}
 
-    #headSection .headLeft .title {
-        text-align: center;
-        font-size: 25px;
-    }
+	#headSection .headLeft .title {
+		text-align: center;
+		font-size: 25px;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
-    #headSection .mainContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+	#headSection .mainContainer {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 
-    #headSection .headLeft {
-        padding: 20px;
-    }
+	#headSection .headLeft {
+		padding: 20px;
+	}
 
-    #headSection .headLeft,
-    #headSection .headRight {
-        width: 100%;
-    }
-
+	#headSection .headLeft,
+	#headSection .headRight {
+		width: 100%;
+	}
 }
